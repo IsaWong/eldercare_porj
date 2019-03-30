@@ -1,0 +1,15 @@
+..\..\output\event_groups.o: ..\..\FreeROTS\event_groups.c
+..\..\output\event_groups.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\FreeRTOS.h
+..\..\output\event_groups.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\event_groups.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\FreeRTOSConfig.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\projdefs.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\portable.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\deprecated_definitions.h
+..\..\output\event_groups.o: ..\..\FreeROTS\portable\RVDS\ARM_CM3\portmacro.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\mpu_wrappers.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\task.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\list.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\timers.h
+..\..\output\event_groups.o: ..\..\FreeROTS\include\event_groups.h

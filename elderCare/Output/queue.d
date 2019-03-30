@@ -1,0 +1,15 @@
+..\..\output\queue.o: ..\..\FreeROTS\queue.c
+..\..\output\queue.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+..\..\output\queue.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+..\..\output\queue.o: ..\..\FreeROTS\include\FreeRTOS.h
+..\..\output\queue.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+..\..\output\queue.o: F:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+..\..\output\queue.o: ..\..\FreeROTS\include\FreeRTOSConfig.h
+..\..\output\queue.o: ..\..\FreeROTS\include\projdefs.h
+..\..\output\queue.o: ..\..\FreeROTS\include\portable.h
+..\..\output\queue.o: ..\..\FreeROTS\include\deprecated_definitions.h
+..\..\output\queue.o: ..\..\FreeROTS\portable\RVDS\ARM_CM3\portmacro.h
+..\..\output\queue.o: ..\..\FreeROTS\include\mpu_wrappers.h
+..\..\output\queue.o: ..\..\FreeROTS\include\task.h
+..\..\output\queue.o: ..\..\FreeROTS\include\list.h
+..\..\output\queue.o: ..\..\FreeROTS\include\queue.h
