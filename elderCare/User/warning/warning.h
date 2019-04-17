@@ -12,4 +12,5 @@
 
 
 void Sensor_val_get(volatile my_data_stream *my_data);
+sms_warning(volatile my_data_stream *my_data);
 #endif

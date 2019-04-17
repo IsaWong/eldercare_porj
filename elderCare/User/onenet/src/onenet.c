@@ -13,6 +13,13 @@
 #include "./dht11/bsp_dht11.h"
 #include "mlx90614.h"
 
+#include "MAX30100.h"
+#include "MAX30100_PulseOximeter.h"
+#include "MAX30100_SpO2Calculator.h"
+#include "MAX30100_Filters.h"
+#include "timer3.h"
+#include "myiic.h"
+
 
 //C库
 #include <string.h>
@@ -21,7 +28,7 @@
 
 
 
-extern unsigned char SIM900_buf[128];
+extern unsigned char SIM900_buf[256];
 _Bool  heart_flag;
 u8 err_count;
 
@@ -89,7 +96,7 @@ _Bool OneNet_DevLink(void)
 unsigned char OneNet_FillBuf(char *buf,my_data_stream *my_data_STREAM)
 {
 
-	char text[16];
+	char text[32];
 	
 	memset(text, 0, sizeof(text));
 	
@@ -104,8 +111,16 @@ unsigned char OneNet_FillBuf(char *buf,my_data_stream *my_data_STREAM)
 	strcat(buf, text);
 
 	memset(text, 0, sizeof(text));
-	sprintf(text, "\"bodytemperature\":%d", my_data_STREAM->body_temp);
+	sprintf(text, "\"bodytemperature\":%d,", my_data_STREAM->body_temp);
 	strcat(buf, text);	
+	
+	memset(text, 0, sizeof(text));
+	sprintf(text, "\"heart_beats\":%d,", my_data_STREAM->heart_beats);
+	strcat(buf, text);	
+	
+	memset(text, 0, sizeof(text));
+	sprintf(text, "\"blood_oxygen\":%d", my_data_STREAM->blood_oxygen);
+	strcat(buf, text);
 	
 	
 //	/*DHT11数据上传*/
@@ -143,7 +158,9 @@ void OneNet_SendData(my_data_stream *my_data_STREAM)
 	
 	EDP_PACKET_STRUCTURE edpPacket = {NULL, 0, 0, 0};												//协议包
 	
-	char buf[128];
+//	char buf[128];
+	char buf[256];
+
 	
 	short body_len = 0, i = 0;
 	

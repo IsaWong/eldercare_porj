@@ -12,8 +12,18 @@
 #include "mlx90614.h"
 #include "warning.h"
 
+//心率血氧
+#include "MAX30100.h"
+#include "MAX30100_PulseOximeter.h"
+#include "MAX30100_SpO2Calculator.h"
+#include "MAX30100_Filters.h"
+#include "timer3.h"
+#include "myiic.h"
+
 #include <string.h>
 #include <stdio.h>
+
+
 
 /*系統發送數據主函數*/
 my_data_stream my_data_2_update;
@@ -26,11 +36,14 @@ unsigned short timeCount = 0;	//发送间隔变量
 void Hardware_Init()
 {
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	//中断控制器分组设置
-	USART_Config();
-	SysTick_Init();
-	DHT11_Init ();
-	SMBus_Init();
+	USART_Config();//串口初始化
+	SysTick_Init();//系统时钟
+	DHT11_Init ();//dht11温湿度
+	SMBus_Init();//MLX90614
 	Usart_2_Config(115200);//gsm串口
+	TIM3_Int_Init(100-1,720-1);//心率血氧模块计时器
+	IIC_Init();//心率血氧
+	SPO2_Init();//心率血氧函数初始化
 	SIM900_Init();
 	printf("Hardware init ok\r\n");
 }
@@ -95,6 +108,23 @@ int main(void)
 //		temp = SMBus_ReadTemp();
 //		printf("\r\n temp is %0.2f\r\n",temp);
 //		Delay_ms(500);
+//	}
+//}
+
+
+///*测试心率血氧模块*/
+//int main(void)
+//{
+//	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);	//中断控制器分组设置
+//	USART_Config();
+//	SysTick_Init();
+//	TIM3_Int_Init(100-1,720-1);//??1ms??
+//	IIC_Init();	
+//	SPO2_Init();
+//	while(1)
+//	{
+//		POupdate();//更新FIFO数据 血氧数据 心率数据 
+//		Delay_ms(10);
 //	}
 //}
 

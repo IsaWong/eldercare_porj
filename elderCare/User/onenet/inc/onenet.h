@@ -23,7 +23,7 @@ typedef struct
 	unsigned char humidt;
 	unsigned char temp;
 	unsigned char body_temp;
-	unsigned char heat_beats;
+	unsigned char heart_beats;
 	unsigned char blood_oxygen;
 	unsigned char beep;
 	unsigned char warning;

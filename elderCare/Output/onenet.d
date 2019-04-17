@@ -40,3 +40,12 @@
 ..\..\output\onenet.o: ..\..\User\./systick/bsp_SysTick.h
 ..\..\output\onenet.o: ..\..\User\./dht11/bsp_dht11.h
 ..\..\output\onenet.o: ..\..\User\mlx90614\mlx90614.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100.h
+..\..\output\onenet.o: ..\..\User\sys\sys.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100_Registers.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100_PulseOximeter.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100_BeatDetector.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100_Filters.h
+..\..\output\onenet.o: ..\..\User\MAX30100\MAX30100_SpO2Calculator.h
+..\..\output\onenet.o: ..\..\User\TIM_FOR_MAX30100\timer3.h
+..\..\output\onenet.o: ..\..\User\IIC\myiic.h

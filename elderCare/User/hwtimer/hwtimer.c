@@ -22,15 +22,6 @@ void NVIC_con(void)
 
 	
 }
-//void gpio_Con(void)
-//{
-//	GPIO_InitTypeDef GPIO_config;
-//	GPIO_config.GPIO_Mode=GPIO_Mode_Out_PP;
-//	GPIO_config.GPIO_Pin=GPIO_Pin_7;
-//	GPIO_config.GPIO_Speed=GPIO_Speed_50MHz;
-//	GPIO_Init(GPIOC,&GPIO_config);
-//	
-//}
 
 void TIM2_con(void)
 {

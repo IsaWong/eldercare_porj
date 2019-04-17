@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\sim900;..\..\User\onenet\inc;..\..\User\EDP;..\..\User\hwtimer;..\..\User\mlx90614;..\..\User\warning</IncludePath>
+              <IncludePath>..\..\Libraries\CMSIS;..\..\User;..\..\Libraries\FWlib\inc;..\..\User\sim900;..\..\User\onenet\inc;..\..\User\EDP;..\..\User\hwtimer;..\..\User\mlx90614;..\..\User\warning;..\..\User\MAX30100;..\..\User\IIC;..\..\User\TIM_FOR_MAX30100;..\..\User\sys</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -595,6 +595,41 @@
               <FileName>warning.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\User\warning\warning.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX30100.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\MAX30100\MAX30100.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX30100_BeatDetector.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\MAX30100\MAX30100_BeatDetector.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX30100_Filters.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\MAX30100\MAX30100_Filters.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX30100_PulseOximeter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\MAX30100\MAX30100_PulseOximeter.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX30100_SpO2Calculator.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\MAX30100\MAX30100_SpO2Calculator.c</FilePath>
+            </File>
+            <File>
+              <FileName>myiic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\IIC\myiic.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\User\TIM_FOR_MAX30100\timer3.c</FilePath>
             </File>
           </Files>
         </Group>

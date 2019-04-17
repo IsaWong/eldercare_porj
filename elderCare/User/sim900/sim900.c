@@ -11,7 +11,7 @@
 
 #define SIM900_ONENET_INFO		"AT+CIPSTART=\"TCP\",\"183.230.40.39\",876\r"
 
-char SIM900_buf[128];
+char SIM900_buf[256];
 //unsigned char SIM900_buf[128];
 unsigned short SIM900_cnt = 0, SIM900_cntPre = 0;
 

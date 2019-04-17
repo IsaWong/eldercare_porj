@@ -39,3 +39,12 @@
 ..\..\output\warning.o: D:\mdk_5\ARM\ARMCC\Bin\..\include\stdlib.h
 ..\..\output\warning.o: ..\..\User\hwtimer\hwtimer.h
 ..\..\output\warning.o: ..\..\User\stm32f10x_it.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100.h
+..\..\output\warning.o: ..\..\User\sys\sys.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100_Registers.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100_PulseOximeter.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100_BeatDetector.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100_Filters.h
+..\..\output\warning.o: ..\..\User\MAX30100\MAX30100_SpO2Calculator.h
+..\..\output\warning.o: ..\..\User\TIM_FOR_MAX30100\timer3.h
+..\..\output\warning.o: ..\..\User\IIC\myiic.h

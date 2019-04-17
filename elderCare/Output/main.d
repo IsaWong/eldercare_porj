@@ -43,3 +43,12 @@
 ..\..\output\main.o: ..\..\User\stm32f10x_it.h
 ..\..\output\main.o: ..\..\User\mlx90614\mlx90614.h
 ..\..\output\main.o: ..\..\User\warning\warning.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100.h
+..\..\output\main.o: ..\..\User\sys\sys.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100_Registers.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100_PulseOximeter.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100_BeatDetector.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100_Filters.h
+..\..\output\main.o: ..\..\User\MAX30100\MAX30100_SpO2Calculator.h
+..\..\output\main.o: ..\..\User\TIM_FOR_MAX30100\timer3.h
+..\..\output\main.o: ..\..\User\IIC\myiic.h

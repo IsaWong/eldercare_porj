@@ -26,7 +26,7 @@ typedef struct
 #define      DHT11_Dout_GPIO_CLK                       RCC_APB2Periph_GPIOB
 
 #define      DHT11_Dout_GPIO_PORT                      GPIOB
-#define      DHT11_Dout_GPIO_PIN                       GPIO_Pin_6
+#define      DHT11_Dout_GPIO_PIN                       GPIO_Pin_1
 
 /************************** DHT11 º¯Êýºê¶¨Òå********************************/
 #define      DHT11_Dout_0	                            GPIO_ResetBits ( DHT11_Dout_GPIO_PORT, DHT11_Dout_GPIO_PIN ) 
